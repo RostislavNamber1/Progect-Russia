@@ -1,0 +1,495 @@
+
+@charset "UTF-8";
+/* резет команды */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  color: #041011;
+  font-family: "Oswald";
+}
+h2{
+  width: 100%;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+}
+/* сокращенный сброс настроек кнопок во всех браузерах */
+header{
+  position: relative;
+  overflow: hidden;
+}
+.picture{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+}
+.bac{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -50;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+._widts{
+  z-index: 1;
+}
+body > header {
+  width: 100%;
+  min-height: 740px;
+  display: flex;
+  justify-content: center;
+}
+nav{
+  height: 60px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.conteiner {
+  width: 100%;
+  max-width: 1110px;
+  min-height: 10px;
+  margin: 0 auto;
+}
+.conteiner  h1 {
+  width: 100%;
+  font-family: "Oswald";
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 95px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 130px;
+}
+@media (max-width: 700px) {
+  .conteiner h1 {
+    padding: 0 2%;
+    font-size: 50px;
+    line-height: 70px;
+  }
+}
+.conteiner  p {
+  margin-top: 20px;
+  padding: 0 2%;
+  width: 100%;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+@media (max-width: 1110px) {
+  nav {
+    padding: 0 10px;
+  }
+}
+.big-progect {
+  width: 100%;
+  min-height: 1081px;
+  display: flex;
+  justify-content: center;
+}
+.big-progect .big-progect__progress {
+  width: 100%;
+  min-height: 300px;
+  background: #F7F7F7;
+  margin-top: -150px;
+}
+/* центрирование блоков с переносом */
+.flex-centr{
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.big-progect .big-progect__progress .big-progect__progress_item {
+  width: 160px;
+  height: 190px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 20px 0px #2b2b2b;
+  border-radius: 3px;
+  margin: 15px;
+}
+.big-progect .big-progect__progress .big-progect__progress_item div {
+  width: 100%;
+  color: #000000;
+  text-align: center;
+}
+.big-progect .big-progect__progress .big-progect__progress_item .red {
+  color: #F7654A;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 72px;
+}
+.big-progect .big-progect__progress .big-progect__progress_item .dark {
+  font-weight: 500;
+  font-size: 36px;
+  color: black;
+}
+.big-progect .big-progect__progress .big-progect__progress_item .gray {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #999999;
+}
+
+.big-progect h2 {
+  width: 100%;
+  color: #404149;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-align: center;
+  margin: 80px 0;
+}
+.big-progect .big-progect__box{
+  width: 100%;
+  display: flex;
+  flex-flow: wrap;
+}
+.big-progect .big-progect__box .big-progect__box_item {
+  flex: 1 2 350px;
+  padding: 1.5%;
+}
+.big-progect .big-progect__box .big-progect__box_item picture {
+  width: 100%;
+  height: auto;
+}
+._boxred {
+  width: 55px;
+  height: 6px;
+  background-color: #F7654A;
+  margin-top: 40px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+.big-progect__box_item_text{
+  padding: 1% 2%;
+}
+.big-progect__box_item_text h3{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #404149;
+}
+.big-progect__box_item_text p{
+  font-family: "Open Sans";
+  font-size: 16px;
+  line-height: 22px;
+  color: #999999;
+  text-align: left;
+}
+
+/* ----------чем мы занимаемся----------------- */
+
+.request{
+  width: 100%;
+  min-height: 180px;
+  background-color: #F7654A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.request > .conteiner{
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+.request__text h3,
+.request__text p{
+
+  color: #ffffff;
+  padding: 1%;
+  text-align: left;
+}
+@media (max-width: 650px) {
+  .request__text h3,
+  .request__text p{
+    text-align: center;
+  }
+}
+.request__text h3{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 71px;
+  letter-spacing: 0.02em;
+}
+.request__text p{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+}
+.request__text,
+.request__button{
+  min-height: 100px;
+  flex: 1 1 auto;
+}
+.request__button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.request__button > button{
+  padding: 1% 5%;
+}
+
+/* ----------галлерея----------------- */
+
+.what{
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+.what > .conteiner{
+  width: 100%;
+}
+.what__text{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 66px;
+}
+.what__cont{
+  width: 100%;
+  min-height: 250px;
+  gap: 1rem;
+}
+.what__cont_blok{
+  flex: 0 0 350px;
+  height: 250px;
+  background-color: #F7F7F7;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.what__cont_blok h4{
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 31px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+.galerea{
+  min-height: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+.galerea__img{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.galerea__img > picture{
+  flex: 0 0 auto;
+}
+/* ----------ответы на вопросы----------------- */
+.voprosi__spisok{
+  min-height: 30px;
+
+}
+.accordion{
+  display: flex;
+  align-items: center;
+  background-color:#ffffff;
+  color: #F7654A;
+  cursor: pointer;
+  padding: 18px 30px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+}
+.accordion::before{
+  content: "\003E";
+  font-size: 30px;
+  color: #F7654A;
+  margin: -10px 10px 0 0;
+}
+
+.voprosi__spisok_magic{
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  transition: 5s;
+}
+.voprosi__spisok_magic p{
+  color: #1b1b1b;
+}
+/* ----------отзывы----------------- */
+.otzivi{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.question > .conteiner{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.question__blok{
+  display: flex;
+  flex-flow: column;
+  flex: 0 0 350px;
+}
+.question__blok_otziv{
+  min-height: 100px;
+  padding: 20px;
+  background-color: #F7F7F7;
+}
+.question__blok_otziv > picture img{
+  width: auto;
+}
+.question__blok_otziv article p{
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #999999;
+}
+.question__blok footer{
+  display: flex;
+  justify-content: space-around;
+  background: none;
+}
+.fio{
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+.ooo{
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  color: #F7654A;
+}
+section + section{
+  margin: 150px 0;
+}
+section header h2{
+  margin-bottom: 60px;
+}
+/* партнеры */
+.partners{
+  background-color: #404149;
+  padding: 100px 0;
+}
+.partners .conteiner header h2{
+  color: #ffffff;
+}
+.partners__col{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.partners__col picture{
+  flex: 0 0 170px;
+}
+/* партнеры */
+/* контакты */
+.conect{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: 1.5em;
+}
+.conect__blok{
+  flex: 0 0 225px;
+}
+.conect__blok picture{
+  all: inherit;
+  width: 37px;
+  height: 49px;
+  margin: 0 auto;
+}
+.conect__blok h4{
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #999999;
+  margin: 20px 0;
+}
+address h3,a h3,.conect__blok h3{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+}
+.email h3{
+  color: #F7654A;
+}
+.email{
+  text-decoration-color: #F7654A;
+}
+/* контакты */
+footer{
+  padding: 30px 0;
+  background: #404149;
+}
+footer .conteiner{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 650px) {
+  footer .conteiner{
+    padding: 0 1em;
+  }
+}
+.znak h6, .kto_delal h6{
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
